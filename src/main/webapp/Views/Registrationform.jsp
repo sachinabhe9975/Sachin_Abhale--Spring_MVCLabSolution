@@ -8,20 +8,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<h1> College Fest Management</h1>
 <form action="save" method="post">
 <table>
 <tr>
-<td> First Name</td><td><input type="text" value="${student.first_name}" name="first_name"/> </td></tr>
+<td> First Name</td><td><input type="text" value="${student.first_name}" name="first_name" required/> </td></tr>
 <tr>
-<td> Last Name </td><td><input type="text" value="${student.last_name}" name="last_name"/> </td>
+<td> Last Name </td><td><input type="text" value="${student.last_name}" name="last_name" required /> </td>
 </tr>
 <tr>
-<td> Department</td><td><input type="text" value="${student.student_department}" name="student_department"/> </td>
+<td> Department</td><td><input type="text" value="${student.student_department}" name="student_department" required /> </td>
 </tr>
 <tr>
 <tr>
-<td>  Country</td><td><input type="text" value="${student.student_country}" name="student_country"/> </td>
+<td>  Country</td><td><input type="text" value="${student.student_country}" name="student_country" required /> </td>
 </tr>
 <tr>
 <td colspan="2"><input type="hidden" value='${student.student_id}' name="student_id"/><input type="submit"/></td></tr>
